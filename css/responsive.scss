@@ -1,0 +1,84 @@
+@media screen and(max-width:768px){
+    html{
+        font-size: 35%;
+    }
+    .section3{
+        header{
+            margin-top: 0rem;
+        }
+    }
+
+}
+@media screen and(max-width:1000px){
+    html{
+        font-size: 35%;
+    }
+    .section2{
+        .info{
+            top: 35%;
+            left: 35%;
+            h2{
+                font-size: 4rem;
+            }
+        }
+    }
+
+}
+@media screen and(max-width:680px){
+    html{
+        font-size: 30%;
+    }
+    .section1{
+        .content{
+            nav{
+                ul{
+                    button{
+                        background-color: red;
+                        padding: 10px 20px;
+                        div{
+                            &:first-child{
+                                display: block;
+                            }
+                        }
+                    }
+                    li{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .section2{
+        padding: 3% 0 15% 0;
+        .info{
+            top: 20%;
+            left: 20%;
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .section3{
+        header{
+            margin-top: 10rem;
+        }
+    }
+}
+@media screen and(max-width: 480px){
+    html{
+        font-size: 25%;
+    }
+    .section2{
+        margin-bottom: 30rem;
+        .content{
+            img{
+                width: 80%;
+            }
+            .info{
+                width: 30rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-container {
+  width: 95%;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+}
+.menu-container .menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  opacity: 0.7;
+  z-index: 100;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-container .sidebar {
+  transform: translateX(20%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: #262626;
+  opacity: 1;
+  z-index: 9999;
+}
+.menu-container .sidebar ul {
+  font-family: "Alata", sans-serif;
+  letter-spacing: 0.3rem;
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  gap: 20px;
+}
+.menu-container .sidebar ul li {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.menu-container .sidebar button {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  border: none;
+  background-color: transparent;
+}
+.menu-container .sidebar button .close {
+  display: block;
+}
+
+.section-container {
+  width: 100%;
+}
+.section-container .section1 {
+  width: 100%;
+  height: 60rem;
+  background-attachment: fixed;
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-container .section1 .bgimage {
+  display: none;
+}
+.section-container .section1 .content {
+  width: 100%;
+}
+.section-container .section1 .content nav {
+  padding-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-container .section1 .content nav .logo {
+  cursor: pointer;
+  margin-left: 10%;
+}
+.section-container .section1 .content nav .logo img {
+  height: 4.5rem;
+}
+.section-container .section1 .content nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.8rem;
+  color: white;
+  opacity: 0.8;
+  margin-right: 10%;
+}
+.section-container .section1 .content nav ul button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.section-container .section1 .content nav ul button div {
+  display: none;
+}
+.section-container .section1 .content nav ul li {
+  color: white;
+  font-family: "Alata", sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.section-container .section1 .content nav ul li:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+.section-container .section1 .content .main-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-left: 10%;
+  color: white;
+  font-size: 6rem;
+  letter-spacing: 5px;
+  padding: 3rem 4rem;
+  max-width: 60rem;
+  border: 2px solid white;
+}
+.section-container .section2 {
+  width: 100%;
+  padding: 15% 0 15%;
+}
+.section-container .section2 .content {
+  position: relative;
+  margin-left: 10%;
+}
+.section-container .section2 .content img {
+  width: 55%;
+}
+.section-container .section2 .content .info {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  max-width: 55rem;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: white;
+  box-sizing: content-box;
+  padding: 7.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-container .section2 .content .info h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.section-container .section2 .content .info p {
+  opacity: 0.8;
+}
+.section-container .section3 {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+}
+.section-container .section3 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-bottom: 7.5rem;
+  margin-top: 15rem;
+}
+.section-container .section3 header div {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+.section-container .section3 header button {
+  color: white;
+  background-color: black;
+  padding: 1rem 3.5rem;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s all;
+}
+.section-container .section3 header button:hover {
+  border-radius: 20px;
+}
+.section-container .section3 .cards {
+  width: 100%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.section-container .section3 .cards .card {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(to top, black, transparent);
+}
+.section-container .section3 .cards .card img {
+  width: 100%;
+  transition: 0.7s all;
+}
+.section-container .section3 .cards .card div {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 300;
+  max-width: 45%;
+  line-height: 2.8rem;
+  opacity: 1.2;
+}
+.section-container .section3 .cards .card:hover img {
+  opacity: 0.7;
+}
+.section-container .section4 {
+  padding: 0 10%;
+  margin-top: 10%;
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Alata", sans-serif;
+}
+.section-container .section4 .left-side .logo {
+  margin-bottom: 10px;
+}
+.section-container .section4 .left-side .logo img {
+  width: 20rem;
+}
+.section-container .section4 .left-side ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.6rem;
+}
+.section-container .section4 .left-side ul li {
+  color: white;
+  opacity: 0.7;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s all;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.section-container .section4 .left-side ul li:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+.section-container .section4 .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.section-container .section4 .right-side .social-media {
+  display: flex;
+  gap: 10px;
+}
+.section-container .section4 .right-side .social-media img {
+  width: 2.7rem;
+  padding-bottom: 5px;
+  opacity: 0.8;
+  transition: 0.2s all;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.section-container .section4 .right-side .social-media img:hover {
+  border-bottom: 2px solid white;
+  opacity: 1;
+}
+.section-container .section4 .right-side div:last-child {
+  color: white;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}/*# sourceMappingURL=vr.css.map */
